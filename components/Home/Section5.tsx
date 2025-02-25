@@ -44,12 +44,14 @@ const Section5 = () => {
     <div
       data-aos="fade-down"
       id="faqs"
-      className="relative w-screen h-auto overflow-hidden"
+      className="relative w-screen h-screen overflow-hidden"
       style={{
         backgroundImage: "url(/images/backgrounds/last_bg.png)",
         backgroundSize: "cover",
         backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", // Ensures the background does not move/resize
+
       }}
     >
       <div className="flex flex-col h-auto items-start gap-[44px] w-full my-[85px] px-5 lg:px-[150px]">
@@ -63,34 +65,42 @@ const Section5 = () => {
             <div
               key={index}
               onClick={() => handleTabClick(index)}
-              className={`group flex justify-between items-center bg-white duration-300 cursor-pointer w-full z-20 py-6 px-4 ${
-                activeTab === index ? "bg-gray-200" : ""
-              }`}
+              className={`group flex flex-col justify-between items-center bg-white duration-300 cursor-pointer w-full z-20 py-6 px-4 
+      ${activeTab === index ? "bg-gray-200" : ""}`}
             >
-              <div className="flex items-center gap-4">
-                <div
-                  className={`rounded-full h-6 w-6  ${
-                    activeTab === index ? "bg-[#FF5A03]" : "bg-[#FB9B00]"
-                  }`}
-                ></div>
-                <p className="text-black text-lg font-normal">{tab.title}</p>
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-4">
+                  <div
+                    className={`rounded-full h-6 w-6 
+            ${activeTab === index ? "bg-[#FF5A03]" : "bg-[#FB9B00]"}`}
+                  ></div>
+                  <p className="text-black text-lg font-normal">{tab.title}</p>
+                </div>
+                <Image
+                  src="/images/icons/leftarrow.svg"
+                  width={10}
+                  height={10}
+                  alt="header"
+                  className={`transform transition-transform duration-300 
+          ${activeTab === index ? "rotate-90" : ""}`}
+                />
               </div>
-              <Image
-                src="/images/icons/leftarrow.svg"
-                width={10}
-                height={10}
-                alt="header"
-                className={`transform transition-transform duration-300 ${
-                  activeTab === index ? "rotate-90" : ""
-                }`}
-              />
+
+              {/* Animated Content */}
+              <div
+                className={`w-full overflow-hidden transition-all duration-500 flex lg:hidden 
+        ${activeTab === index ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"}`}
+              >
+                <p className="text-black text-lg font-normal mt-4">{tab.content}</p>
+              </div>
             </div>
           ))}
 
+
           {activeTab !== null && (
             <div
-              key={activeTab} // Re-render modal when switching tabs
-              className={`absolute w-full left-[90%] -top-10 group flex flex-col justify-start rounded-[13px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 text-white cursor-pointer z-10 p-[10px] min-h-[475px] pl-28 py-10 gap-10 
+              key={activeTab}
+              className={`absolute w-full left-[90%] -top-10 group hidden lg:flex flex-col justify-start rounded-[13px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 text-white cursor-pointer z-10 p-[10px] min-h-[475px] pl-28 py-10 gap-10 
                 ${fadeState === "fading-out" ? "opacity-0 scale-95" : ""}
                 ${fadeState === "fading-in" ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
             >

@@ -104,9 +104,9 @@ const Header = () => {
         </div>
       </div>
       <div data-aos="fade-down">
-        <div className="flex flex-col w-full h-screen justify-between pb-14 lg:pb-[104px] px-5">
-          <div className="flex flex-col w-full items-center pt-[213px]">
-            <div className="text-white text-center text-5xl lg:text-[100px] w-full xl:w-[60%] uppercase leading-[50px] lg:leading-[82px] font-Evil">
+        <div className="flex flex-col w-full h-screen justify-end gap-52 xl:gap-12  pb-14 lg:pb-[104px] px-5">
+          <div className="flex flex-col w-full items-center ">
+            <div className="text-white text-center text-5xl lg:text-[100px] w-full lg:w-[80%] 2xl:w-[60%] uppercase leading-[50px] lg:leading-[82px] font-Evil">
               Trade Memecoins Instantly on Sherex DEX
             </div>
           </div>
