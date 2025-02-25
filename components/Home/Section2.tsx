@@ -7,7 +7,7 @@ const Section2 = () => {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   return (
-    <div data-aos="fade-up" id="earn" className="relative w-screen h-auto overflow-hidden"
+    <div data-aos="fade-down" id="earn" className="relative w-screen h-auto overflow-hidden"
       style={{
         backgroundImage: 'url(/images/backgrounds/section_bg.png)',
         backgroundSize: 'cover',

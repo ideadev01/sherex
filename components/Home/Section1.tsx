@@ -8,8 +8,7 @@ const Section1 = () => {
   const [isHovered3, setIsHovered3] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
   return (
-    <div data-aos="fade-up"
-      id="about"
+    <div data-aos="fade-down" id="about"
       className="relative h-auto w-full flex flex-col bg-gradient"
     >
       <div className="flex flex-col justify-center items-center gap-14 py-[85px] px-[150px]">
@@ -111,11 +110,13 @@ const Section1 = () => {
           </div>
 
         </div>
-        <div
-          className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D]  rounded-md py-2 px-4"
-        >
-          <p className="text-base text-white pr-4 font-semibold">Start trading now</p>
-        </div>
+        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer">
+          <div
+            className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D]  rounded-md py-2 px-4"
+          >
+            <p className="text-base text-white pr-4 font-semibold">Start trading now</p>
+          </div>
+        </a>
       </div>
       <div className="flex flex-col justify-center items-center gap-[44px] py-[85px] px-[150px]">
         <div className="flex flex-col justify-center items-center gap-6">
