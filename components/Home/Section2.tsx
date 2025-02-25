@@ -2,7 +2,9 @@
 import React from "react";
 import { useState } from 'react';
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 const Section2 = () => {
+  const t = useTranslations();
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
@@ -20,10 +22,11 @@ const Section2 = () => {
         <div className="flex flex-col w-full items-center z-20">
           <div className="flex flex-col justify-center items-center gap-6">
             <h1 className="text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] font-Nulshock">
-              Earn Rewards with Sherex DEX
+              {t("earn_rewards")}
             </h1>
             <p className="text-[#FAC43D] text-lg text-center font-normal ">
-              Maximize your memecoin holdings by staking and providing liquidity
+              {t("earn_rewards_description")}
+
             </p>
           </div>
         </div>
@@ -36,10 +39,10 @@ const Section2 = () => {
           >
             <div className="gap-[9px] flex flex-col pl-[60px] lg:pl-[90px]">
               <p className="text-[#FB9B00] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase font-Nulshock">
-                Stake $SHRX Tokens
+                {t("stake_token")}
               </p>
               <p className="text-md lg:text-[28px] text-left font-normal leading-4 lg:leading-9">
-                Lock your tokens to earn exclusive rewards.
+                {t("stake_token_description")}
               </p>
             </div>
             <Image
@@ -59,10 +62,10 @@ const Section2 = () => {
           >
             <div className="gap-[9px] flex flex-col pl-[60px] lg:pl-[90px]">
               <p className="text-[#FF5A03] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase font-Nulshock">
-                Add Liquidity
+                {t("add_liquidity")}
               </p>
               <p className="text-md lg:text-[28px] text-left font-normal leading-4 lg:leading-9">
-                Provide liquidity to pools and earn your share of trading fees.
+                {t("add_liquidity_description")}
               </p>
             </div>
             <Image
@@ -82,10 +85,10 @@ const Section2 = () => {
           >
             <div className="gap-[9px] flex flex-col pl-[60px] lg:pl-[90px]">
               <p className="text-[#FB9B00] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase font-Nulshock">
-                Incentives and Bonuses
+                {t("incentive_bonuses")}
               </p>
               <p className="text-md lg:text-[28px] text-left font-normal leading-4 lg:leading-9">
-                Participate in referral programs, token burns, and exclusive airdrops.
+                {t("incentive_bonuses_description")}
               </p>
             </div>
             <Image
@@ -98,7 +101,7 @@ const Section2 = () => {
           </div>
         </div>
         <div className="flex items-center cursor-pointer bg-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[25.5px] z-20">
-          <p className="text-base lg:text-[28px] leading-8 text-[#291A15] font-bold uppercase font-Nulshock">Start Earning</p>
+          <p className="text-base lg:text-[28px] leading-8 text-[#291A15] font-bold uppercase font-Nulshock">{t("start_earning")}</p>
         </div>
       </div>
     </div>

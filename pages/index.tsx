@@ -1,4 +1,4 @@
-
+import { GetStaticProps } from "next";
 import Header from "@/components/Home/Header";
 import Section1 from "@/components/Home/Section1";
 import Section2 from "@/components/Home/Section2";
@@ -23,3 +23,11 @@ export default function Home() {
 
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      messages: (await import(`../locales/${locale}.json`)).default,
+    },
+  };
+};

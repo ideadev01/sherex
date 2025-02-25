@@ -12,6 +12,7 @@ module.exports = {
       fontFamily: {
         Evil: ["Evil-Empire"],
         Nulshock: ["Nulshock-Bd"],
+        Arabic_Font: ["Arabic_Font"],
       }
     },
   },
