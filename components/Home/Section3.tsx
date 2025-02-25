@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Section3 = () => {
   return (
-    <div id="launch"
+    <div data-aos="fade-down" id="launch"
       className="relative h-screen w-full flex flex-col bg-[#291A15]"
     >
       <Image

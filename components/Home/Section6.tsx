@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Section6 = () => {
   return (
-    <div
+    <div data-aos="fade-down"
       className="relative h-auto w-full flex flex-col bg-gradient-to-r from-[#291A15]  via-[#946842] to-[#291A15] px-[150px] pt-[115px] "
     >
       <div className="flex justify-between items-start w-full pb-[120px]">

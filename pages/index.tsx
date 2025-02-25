@@ -10,7 +10,7 @@ import Section6 from "@/components/Home/Section6";
 export default function Home() {
   return (
     <>
-      <main className="w-full overflow-hidden">
+      <main className="w-full overflow-hidden" >
         <Header />
         <Section1 />
         <Section2 />

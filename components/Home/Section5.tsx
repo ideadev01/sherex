@@ -26,7 +26,7 @@ const Section5 = () => {
     },
   ];
   return (
-    <div id="faqs"
+    <div data-aos="fade-down" id="faqs"
       className="relative w-screen h-auto overflow-hidden " 
       style={{ 
         backgroundImage: 'url(/images/backgrounds/last_bg.png)', 

@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div id="home" className="relative w-screen h-screen overflow-hidden"
+    <div data-aos="fade-down" id="home" className="relative w-screen h-screen overflow-hidden"
       style={{
         backgroundImage: 'url(/images/backgrounds/header.png)',
         backgroundSize: 'cover',

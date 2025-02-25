@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Section4 = () => {
   return (
-    <div id="join"
+    <div data-aos="fade-down" id="join"
       className="relative w-screen h-auto overflow-hidden " style={{ backgroundImage: 'url(/images/backgrounds/hole.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
     >
       <Image
