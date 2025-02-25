@@ -10,7 +10,14 @@ const Header = () => {
   };
 
   return (
-    <div data-aos="fade-down" id="home" className="relative w-screen h-screen overflow-hidden"
+    <div id="home" className="relative w-screen h-screen overflow-hidden"
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
       style={{
         backgroundImage: 'url(/images/backgrounds/header.png)',
         backgroundSize: 'cover',
