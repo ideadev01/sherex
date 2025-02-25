@@ -91,7 +91,7 @@ const Section5 = () => {
                 className={`w-full overflow-hidden transition-all duration-500 flex lg:hidden 
         ${activeTab === index ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"}`}
               >
-                <p className="text-black text-lg font-normal mt-4">{tab.content}</p>
+                <p className="text-black text-lg font-normal mt-4 ml-10">{tab.content}</p>
               </div>
             </div>
           ))}

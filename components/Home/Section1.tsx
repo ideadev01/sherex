@@ -8,7 +8,7 @@ const Section1 = () => {
   const [isHovered3, setIsHovered3] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
   return (
-    <div data-aos="fade-down" id="about"
+    <div data-aos="fade-down" id="smarttrading"
       className="relative h-auto w-full flex flex-col bg-gradient"
     >
       <div className="flex flex-col justify-center items-center gap-14 py-[85px] px-5 lg:px-[150px]">
