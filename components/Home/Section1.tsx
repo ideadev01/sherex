@@ -11,17 +11,17 @@ const Section1 = () => {
     <div data-aos="fade-down" id="about"
       className="relative h-auto w-full flex flex-col bg-gradient"
     >
-      <div className="flex flex-col justify-center items-center gap-14 py-[85px] px-[150px]">
+      <div className="flex flex-col justify-center items-center gap-14 py-[85px] px-5 lg:px-[150px]">
         <div className="flex flex-col justify-center items-center gap-6">
           <h1 className="text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] font-Nulshock">
             Why Trade on Sherex DEX?
           </h1>
-          <p className="text-white text-lg text-center font-normal w-1/2">
+          <p className="text-white text-lg text-center font-normal w-full lg:w-1/2">
             Sherex DEX is not just another exchange, it`s the ultimate platform for memecoin trading. Built on BNB Smart Chain, Sherex DEX offers speed, security, and innovation tailored for the memecoin community.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-[41px]">
-          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[41px]">
+          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer z-20s"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -37,7 +37,7 @@ const Section1 = () => {
               <p className=" text-base text-center font-semibold leading-5">Built on the BNB Smart Chain, Sherex processes trades with minimal latency.</p>
             </div>
           </div>
-          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer"
+          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer z-20"
             onMouseEnter={() => setIsHovered1(true)}
             onMouseLeave={() => setIsHovered1(false)}
           >
@@ -54,7 +54,7 @@ const Section1 = () => {
               <p className=" text-base text-center font-semibold leading-5">Fully audited smart contracts ensure user funds are always safe. </p>
             </div>
           </div>
-          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer"
+          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer z-20"
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
@@ -70,7 +70,7 @@ const Section1 = () => {
               <p className=" text-base text-center font-semibold leading-5">Enjoy ultra-low transaction fees that maximize your profits.</p>
             </div>
           </div>
-          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer"
+          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer z-20"
             onMouseEnter={() => setIsHovered3(true)}
             onMouseLeave={() => setIsHovered3(false)}
           >
@@ -87,7 +87,7 @@ const Section1 = () => {
               <p className=" text-base text-center font-semibold leading-5">The first DEX tailored for meme tokens like Dogecoin, Shiba Inu, and $SHRX.</p>
             </div>
           </div>
-          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer"
+          <div className="group flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[44px] pb-[51px] backdrop-blur-[29px] transition-colors duration-300 hover:bg-gradient-to-t to-[#FF5A03] from-[#FAC43D] text-white hover:text-black cursor-pointer z-20"
             onMouseEnter={() => setIsHovered4(true)}
             onMouseLeave={() => setIsHovered4(false)}
           >
@@ -114,11 +114,11 @@ const Section1 = () => {
           <div
             className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D]  rounded-md py-2 px-4"
           >
-            <p className="text-base text-white pr-4 font-semibold">Start trading now</p>
+            <p className="text-base text-white font-semibold">Start trading now</p>
           </div>
         </a>
       </div>
-      <div className="flex flex-col justify-center items-center gap-[44px] py-[85px] px-[150px]">
+      <div className="flex flex-col justify-center items-center gap-14 lg:gap-[44px] py-[85px] px-5 md:px-24 lg:px-[150px]">
         <div className="flex flex-col justify-center items-center gap-6">
           <h1 className="text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] font-Nulshock">
             Trade Memecoins with Ease
@@ -127,9 +127,9 @@ const Section1 = () => {
             Sherex DEX makes trading seamless, secure, and rewarding. Here’s how
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[57px] min-h-[566px] items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[150px] lg:gap-[57px] min-h-[566px] items-end ">
           <div className='flex flex-col gap-3.5 relative group'>
-            <div className="flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[98px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
+            <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
               <Image
                 src="images/icons/bitcoin.svg"
                 height={255}
@@ -147,7 +147,7 @@ const Section1 = () => {
             </div>
           </div>
           <div className='flex flex-col gap-3.5 relative group'>
-            <div className="flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[98px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
+            <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
               <Image
                 src="images/icons/trading.svg"
                 height={255}
@@ -165,7 +165,7 @@ const Section1 = () => {
             </div>
           </div>
           <div className="relative flex flex-col gap-3.5 cursor-pointer group">
-            <div className="flex flex-col gap-[18px] justify-center items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] pt-[98px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white">
+            <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white">
               <Image
                 src="images/icons/order.svg"
                 height={255}
@@ -185,8 +185,8 @@ const Section1 = () => {
         </div>
 
         <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer">
-          <div className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-full py-[19px] px-[57.5px]">
-            <p className="text-[28px] leading-8 text-white font-semibold uppercase font-Nulshock">Trade Now</p>
+          <div className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[57.5px]">
+            <p className="text-base lg:text-[28px] leading-8 text-white font-semibold uppercase font-Nulshock">Trade Now</p>
           </div>
         </a>
       </div>

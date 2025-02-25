@@ -3,10 +3,10 @@ import Image from "next/image";
 const Section6 = () => {
   return (
     <div data-aos="fade-down"
-      className="relative h-auto w-full flex flex-col bg-gradient-to-r from-[#291A15]  via-[#946842] to-[#291A15] px-[150px] pt-[115px] "
+      className="relative h-auto w-full flex flex-col bg-gradient-to-r from-[#291A15]  via-[#946842] to-[#291A15] px-5 lg:px-[150px] pt-[115px] "
     >
-      <div className="flex justify-between items-start w-full pb-[120px]">
-        <div className="flex flex-col items-center gap-10 w-1/2">
+      <div className="flex flex-col lg:flex-row gap-5  justify-between items-start w-full pb-[120px]">
+        <div className="flex flex-col items-center justify-center gap-10 w-full lg:w-1/2">
           <Image
             src="/images/logo/footerLogo.svg"
             height={187}
@@ -20,7 +20,7 @@ const Section6 = () => {
               width={12}
               className=""
               alt="logo" />
-            <p className="text-lg leading-8 text-white font-semibold uppercase">Live Chat</p>
+            <p className="text-base lg:text-lg leading-8 text-white font-semibold uppercase">Live Chat</p>
           </div>
         </div>
         <div className="flex flex-col gap-6">
@@ -113,7 +113,7 @@ const Section6 = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center w-full pt-10 pb-4 border-t border-[rgba(255,255,255,0.17)]">
+      <div className="flex flex-col lg:flex-row gap-2 justify-between items-center w-full pt-10 pb-4 border-t border-[rgba(255,255,255,0.17)]">
         <p className="text-white text-base font-normal">Copyright ©2025 Sherex. All Rights Reserved</p>
         <div className="flex items-center gap-2">
           <p className="text-white text-base font-normal">Payment We Accept:</p>

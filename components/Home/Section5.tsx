@@ -1,34 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Section5 = () => {
-  const [activeTab, setActiveTab] = useState<number>(-1); // Start with no active tab (-1)
+  const [activeTab, setActiveTab] = useState<number | null>(null);
+  const [fadeState, setFadeState] = useState<"fading-in" | "fading-out" | null>(null);
+
   const tabs = [
-    {
-      title: "What is Sherex DEX?",
-      content: "A decentralized exchange built exclusively for memecoins.",
-    },
-    {
-      title: "How can I trade on Sherex?",
-      content: "Connect your wallet, choose your memecoin, and start trading.",
-    },
-    {
-      title: "Is Sherex secure?",
-      content: "Built on BNB Smart Chain, Sherex uses audited smart contracts to protect user funds.",
-    },
-    {
-      title: "What is Sherex DEX?",
-      content: "A decentralized exchange built exclusively for memecoins.",
-    },
-    {
-      title: "How can I trade on Sherex?",
-      content: "Connect your wallet, choose your memecoin, and start trading.",
-    },
+    { title: "What is Sherex DEX?", content: "A decentralized exchange built exclusively for memecoins." },
+    { title: "How can I trade on Sherex?", content: "Connect your wallet, choose your memecoin, and start trading." },
+    { title: "Is Sherex secure?", content: "Built on BNB Smart Chain, Sherex uses audited smart contracts to protect user funds." },
+    { title: "What is Sherex DEX?", content: "A decentralized exchange built exclusively for memecoins." },
+    { title: "How can I trade on Sherex?", content: "Connect your wallet, choose your memecoin, and start trading." },
   ];
 
   const handleTabClick = (index: number) => {
-    setActiveTab(activeTab === index ? -1 : index); // Toggle between opening and closing the same tab
+    if (activeTab === index) {
+      setFadeState("fading-out");
+      setTimeout(() => {
+        setActiveTab(null);
+        setFadeState(null);
+      }, 300); // Match animation duration
+    } else {
+      if (activeTab !== null) {
+        setFadeState("fading-out");
+        setTimeout(() => {
+          setActiveTab(index);
+          setFadeState("fading-in");
+        }, 300); // Delay switching tabs until fade-out completes
+      } else {
+        setActiveTab(index);
+        setFadeState("fading-in");
+      }
+    }
   };
+
+  useEffect(() => {
+    if (fadeState === "fading-in") {
+      setTimeout(() => setFadeState(null), 300); // Reset after fade-in completes
+    }
+  }, [fadeState]);
 
   return (
     <div
@@ -42,17 +52,17 @@ const Section5 = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex flex-col h-auto items-start gap-[44px] w-full my-[85px] px-[150px]">
+      <div className="flex flex-col h-auto items-start gap-[44px] w-full my-[85px] px-5 lg:px-[150px]">
         <div className="flex flex-col w-full items-start z-20 pb-[100px]">
-          <h1 className="text-[#FB9B00] text-4xl lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase font-Nulshock">
+          <h1 className="text-[#FB9B00] text-3xl lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase font-Nulshock">
             Frequently Asked Questions
           </h1>
         </div>
-        <div className="flex flex-col w-1/2 relative z-20 pb-[133px]">
+        <div className="flex flex-col w-full lg:w-1/2 relative z-20 pb-[133px]">
           {tabs.map((tab, index) => (
             <div
               key={index}
-              onClick={() => handleTabClick(index)} // Use the handleTabClick function
+              onClick={() => handleTabClick(index)}
               className={`group flex justify-between items-center bg-white duration-300 cursor-pointer w-full z-20 py-6 px-4 ${
                 activeTab === index ? "bg-gray-200" : ""
               }`}
@@ -77,20 +87,23 @@ const Section5 = () => {
             </div>
           ))}
 
-          <div
-            className={`w-full left-[90%] -top-10 absolute group flex flex-col justify-start rounded-[13px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 text-white cursor-pointer z-10 p-[10px] min-h-[475px] pl-28 py-10 gap-10 ${
-              activeTab === -1 ? "opacity-0" : "opacity-100"
-            }`}
-          >
-            <h1 className="text-white text-4xl lg:text-[17px] font-bold leading-[20.4px] tracking-[0%] uppercase">
-              {tabs[activeTab]?.title}
-            </h1>
-            <p className="text-white text-lg font-normal">{tabs[activeTab]?.content}</p>
-          </div>
+          {activeTab !== null && (
+            <div
+              key={activeTab} // Re-render modal when switching tabs
+              className={`absolute w-full left-[90%] -top-10 group flex flex-col justify-start rounded-[13px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 text-white cursor-pointer z-10 p-[10px] min-h-[475px] pl-28 py-10 gap-10 
+                ${fadeState === "fading-out" ? "opacity-0 scale-95" : ""}
+                ${fadeState === "fading-in" ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
+            >
+              <h1 className="text-white text-4xl lg:text-[17px] font-bold leading-[20.4px] tracking-[0%] uppercase">
+                {tabs[activeTab]?.title}
+              </h1>
+              <p className="text-white text-lg font-normal">{tabs[activeTab]?.content}</p>
+            </div>
+          )}
         </div>
 
         <div className="w-full flex justify-center items-center z-20">
-          <div className="flex items-center justify-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D]  rounded-md py-2 px-4 z-20">
+          <div className="flex items-center justify-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4 z-20">
             <p className="text-base text-white font-semibold">Learn More</p>
           </div>
         </div>
