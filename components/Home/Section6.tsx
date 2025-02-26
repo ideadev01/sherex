@@ -28,7 +28,7 @@ const Section6 = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-auto">
-          <p className={`text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("quick_link")}</p>
+          <p className={`text-sm lg:text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("quick_link")}</p>
           <div className="flex flex-wrap lg:flex-col justify-between gap-5">
             <div className="flex items-center gap-2">
               <Image
@@ -37,7 +37,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-base font-normal">{t("earn")}</p>
+              <p className="text-white text-xs lg:text-base font-normal">{t("earn")}</p>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -46,7 +46,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-base font-normal">{t("trade")}</p>
+              <p className="text-white text-xs lg:text-base font-normal">{t("trade")}</p>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -55,7 +55,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-base font-normal">{t("community")}</p>
+              <p className="text-white text-xs lg:text-base font-normal">{t("community")}</p>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -64,7 +64,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-base font-normal">{t("github")}</p>
+              <p className="text-white text-xs lg:text-base font-normal">{t("github")}</p>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -73,21 +73,21 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-base font-normal">{t("term_service")}</p>
+              <p className="text-white text-xs lg:text-base font-normal">{t("term_service")}</p>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-full lg:w-auto justify-center items-center lg:items-start">
-          <p className={`text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("help_support")}</p>
+          <p className={`text-sm lg:text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("help_support")}</p>
           <div className="flex flex-col gap-1 items-center lg:items-start w-full">
             <div className="flex items-center gap-2">
-              <p className="text-white text-base font-normal">{t("support")}</p>
+              <p className="text-white text-xs lg:text-base font-normal">{t("support")}</p>
               <a href="mailto:info@sherex.com" className="text-white text-base font-normal cursor-pointer">
                 info@sherex.com
               </a>
             </div>
             <div className="flex items-center gap-2">
-              <p className="text-white text-base font-normal">{t("phone")}</p>
+              <p className="text-white text-xs lg:text-base font-normal">{t("phone")}</p>
               <a href="tel:+12345678900" className="text-white text-base font-normal cursor-pointer">
                 +1 234 567 8900
               </a>
@@ -122,9 +122,9 @@ const Section6 = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-2 justify-between items-center w-full pt-10 pb-4 border-t border-[rgba(255,255,255,0.17)]">
-        <p className="text-white text-base font-normal">{t("copyright")}</p>
+        <p className="text-white text-xs lg:text-base font-normal">{t("copyright")}</p>
         <div className="flex items-center gap-2">
-          <p className="text-white text-base font-normal">{t("payment")}</p>
+          <p className="text-white text-xs lg:text-base font-normal">{t("payment")}</p>
           <Image
             src="/images/icons/card.png"
             height={30}
