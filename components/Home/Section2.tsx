@@ -3,8 +3,10 @@ import React from "react";
 import { useState } from 'react';
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 const Section2 = () => {
   const t = useTranslations();
+   const { locale } = useRouter();
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
@@ -21,7 +23,7 @@ const Section2 = () => {
       <div className="flex flex-col h-auto justify-between items-center gap-[44px] w-full my-[85px] z-20 px-5">
         <div className="flex flex-col w-full items-center z-20">
           <div className="flex flex-col justify-center items-center gap-6">
-            <h1 className="text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] font-Nulshock">
+            <h1 className={`text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
               {t("earn_rewards")}
             </h1>
             <p className="text-[#FAC43D] text-lg text-center font-normal ">
@@ -38,7 +40,7 @@ const Section2 = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <div className="gap-[9px] flex flex-col pl-[60px] lg:pl-[90px]">
-              <p className="text-[#FB9B00] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase font-Nulshock">
+              <p className={`text-[#FB9B00] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>
                 {t("stake_token")}
               </p>
               <p className="text-md lg:text-[28px] text-left font-normal leading-4 lg:leading-9">
@@ -61,7 +63,7 @@ const Section2 = () => {
             onMouseLeave={() => setIsHovered1(false)}
           >
             <div className="gap-[9px] flex flex-col pl-[60px] lg:pl-[90px]">
-              <p className="text-[#FF5A03] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase font-Nulshock">
+              <p className={`text-[#FF5A03] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>
                 {t("add_liquidity")}
               </p>
               <p className="text-md lg:text-[28px] text-left font-normal leading-4 lg:leading-9">
@@ -84,7 +86,7 @@ const Section2 = () => {
             onMouseLeave={() => setIsHovered2(false)}
           >
             <div className="gap-[9px] flex flex-col pl-[60px] lg:pl-[90px]">
-              <p className="text-[#FB9B00] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase font-Nulshock">
+              <p className={`text-[#FB9B00] text-lg lg:text-[38px] text-left font-bold lg:leading-10 uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>
                 {t("incentive_bonuses")}
               </p>
               <p className="text-md lg:text-[28px] text-left font-normal leading-4 lg:leading-9">
@@ -101,7 +103,7 @@ const Section2 = () => {
           </div>
         </div>
         <div className="flex items-center cursor-pointer bg-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[25.5px] z-20">
-          <p className="text-base lg:text-[28px] leading-8 text-[#291A15] font-bold uppercase font-Nulshock">{t("start_earning")}</p>
+          <p className={`text-base lg:text-[28px] leading-8 text-[#291A15] font-bold uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("start_earning")}</p>
         </div>
       </div>
     </div>

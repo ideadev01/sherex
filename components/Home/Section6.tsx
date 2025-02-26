@@ -1,7 +1,9 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Section6 = () => {
+  const {locale} = useRouter();
   const t = useTranslations();
   return (
     <div data-aos="fade-down"
@@ -26,7 +28,7 @@ const Section6 = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-auto">
-          <p className="text-lg leading-8 text-[#FF5A03] font-bold uppercase font-Nulshock text-center lg:text-left">{t("quick_link")}</p>
+          <p className={`text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("quick_link")}</p>
           <div className="flex lg:flex-col justify-between  gap-2">
             <div className="flex items-center gap-2">
               <Image
@@ -76,7 +78,7 @@ const Section6 = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-auto justify-center items-center lg:items-start">
-          <p className="text-lg leading-8 text-[#FF5A03] font-bold uppercase font-Nulshock text-center lg:text-left">{t("help_support")}</p>
+          <p className={`text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("help_support")}</p>
           <div className="flex flex-row lg:flex-col gap-2 justify-between w-full">
             <div className="flex items-center gap-2">
               <p className="text-white text-base font-normal">{t("support")}</p>

@@ -60,7 +60,7 @@ const Section5 = () => {
     >
       <div className="flex flex-col h-auto items-start gap-[44px] w-full my-[85px] px-5 lg:px-[150px]">
         <div className="flex flex-col w-full items-start z-20 pb-10 lg:pb-[100px]">
-          <h1 className="text-[#FB9B00] text-3xl lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase font-Nulshock text-center lg:text-left">
+          <h1 className={`text-[#FB9B00] text-3xl lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             {t("frequently_ask")}
           </h1>
         </div>

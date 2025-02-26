@@ -1,8 +1,10 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Section4 = () => {
   const t = useTranslations();
+  const {locale} = useRouter();
   return (
     <div data-aos="fade-down" id="join"
       className="relative w-screen h-auto overflow-hidden " style={{ backgroundImage: 'url(/images/backgrounds/hole.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
@@ -18,7 +20,7 @@ const Section4 = () => {
       <div className="flex flex-col h-auto items-start gap-[44px] w-full my-[85px] px-5 lg:px-[150px]">
         <div className="flex flex-col w-full items-start z-20">
           <div className="flex flex-col justify-center  gap-6">
-            <h1 className="text-white text-4xl lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase font-Nulshock text-center lg:text-left">
+            <h1 className={`text-white text-4xl lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>
               {t("join_pack")}
             </h1>
             <p className="text-white text-[26px] font-semibold w-full lg:w-2/3 text-center lg:text-left">
@@ -29,7 +31,7 @@ const Section4 = () => {
         <div className="flex flex-col w-full lg:w-[60%] gap-[31px] text-center lg:text-left">
           <div className="relative group flex flex-col justify-center rounded-[13px] bg-[rgba(255,255,255,0.1)] px-[14.5px] backdrop-blur-[20px] transition-colors duration-300 text-white cursor-pointer w-full z-20 p-[10px]"
           >
-            <h1 className="text-white text-3xl lg:text-[26px] font-bold leading-[31.2px] tracking-[0%] uppercase font-Nulshock">
+            <h1 className={`text-white text-3xl lg:text-[26px] font-bold leading-[31.2px] tracking-[0%] uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>
               {t("meme_contests")}
             </h1>
             <p className="text-[#FAC43D] text-[22px] font-normal ">
@@ -38,7 +40,7 @@ const Section4 = () => {
           </div>
           <div className="relative group flex flex-col justify-center rounded-[13px] bg-[rgba(255,255,255,0.1)] px-[14.5px] backdrop-blur-[20px] transition-colors duration-300 text-white cursor-pointer w-full z-20 p-[10px]"
           >
-            <h1 className="text-white text-3xl lg:text-[26px] font-bold leading-[31.2px] tracking-[0%] uppercase font-Nulshock">
+            <h1 className={`text-white text-3xl lg:text-[26px] font-bold leading-[31.2px] tracking-[0%] uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>
               {t("community_governance")}
             </h1>
             <p className="text-[#FAC43D] text-[22px] font-normal ">
@@ -47,7 +49,7 @@ const Section4 = () => {
           </div>
           <div className="relative group flex flex-col justify-center rounded-[13px] bg-[rgba(255,255,255,0.1)] px-[14.5px] backdrop-blur-[20px] transition-colors duration-300 text-white cursor-pointer w-full z-20 p-[10px]"
           >
-            <h1 className="text-white text-3xl lg:text-[26px] font-bold leading-[31.2px] tracking-[0%] uppercase font-Nulshock">
+            <h1 className={`text-white text-3xl lg:text-[26px] font-bold leading-[31.2px] tracking-[0%] uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>
               {t("exclusive_updates")}
             </h1>
             <p className="text-[#FAC43D] text-[22px] font-normal ">

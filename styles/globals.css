@@ -10,10 +10,14 @@
   font-family: Nulshock-Bd; 
   src: url(./font/NulshockBd.otf) ;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
-html[lang="ar"] {
-  font-family: 'Cairo', sans-serif;
+html[lang="ar"] body {
+  font-family: 'Cairo', sans-serif !important;
+}
+.slick-slide {
+  padding-left: 10px;
+  padding-right: 10px;
+  /* padding-top: 130px; */
 }
 
 :root {
