@@ -183,13 +183,13 @@ const Header = () => {
                 {t("simplicity")}
               </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-[27px]">
-              <div className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4">
+            <div className="flex flex-col md:flex-row gap-[27px] z-30">
+              <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4">
                 <p className="text-base text-white font-semibold">{t("start_trading")}</p>
-              </div>
-              <div className="flex items-center cursor-pointer rounded-md py-2 px-4 border-2 border-solid border-white">
+              </a>
+              <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer rounded-md py-2 px-4 border-2 border-solid border-white">
                 <p className="text-base text-white font-semibold">{t("learn_more")}</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>

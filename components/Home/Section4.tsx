@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 const Section4 = () => {
   const t = useTranslations();
-  const {locale} = useRouter();
+  const { locale } = useRouter();
   return (
     <div data-aos="fade-down" id="join"
       className="relative w-screen h-auto overflow-hidden " style={{ backgroundImage: 'url(/images/backgrounds/hole.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
@@ -57,9 +57,9 @@ const Section4 = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center cursor-pointer bg-[#FF5A03] rounded-full py-5 lg:py-2 px-5 z-20 w-full lg:w-auto justify-center">
+        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-[#FF5A03] rounded-full py-5 lg:py-2 px-5 z-20 w-full lg:w-auto justify-center">
           <p className="text-base leading-8 text-white font-semibold uppercase">{t("join_community")}</p>
-        </div>
+        </a>
       </div>
     </div>
   )

@@ -30,7 +30,7 @@ const Section6 = () => {
         <div className="flex flex-col gap-6 w-full lg:w-auto">
           <p className={`text-sm lg:text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("quick_link")}</p>
           <div className="flex flex-wrap lg:flex-col justify-between gap-5">
-            <div className="flex items-center gap-2">
+            <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Image
                 src="/images/icons/filledarrow.svg"
                 height={8}
@@ -38,8 +38,8 @@ const Section6 = () => {
                 className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-xs lg:text-base font-normal">{t("earn")}</p>
-            </div>
-            <div className="flex items-center gap-2">
+            </a>
+            <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Image
                 src="/images/icons/filledarrow.svg"
                 height={8}
@@ -47,7 +47,7 @@ const Section6 = () => {
                 className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-xs lg:text-base font-normal">{t("trade")}</p>
-            </div>
+            </a>
             <div className="flex items-center gap-2">
               <Image
                 src="/images/icons/filledarrow.svg"
@@ -56,15 +56,6 @@ const Section6 = () => {
                 className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-xs lg:text-base font-normal">{t("community")}</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/images/icons/filledarrow.svg"
-                height={8}
-                width={8}
-                className="hidden lg:block"
-                alt="logo" />
-              <p className="text-white text-xs lg:text-base font-normal">{t("github")}</p>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -94,30 +85,30 @@ const Section6 = () => {
             </div>
           </div>
           <div className="flex items-center gap-5 pt-5">
-            <Image
-              src="/images/icons/git.png"
-              height={20}
-              width={20}
-              className=""
-              alt="logo" />
-            <Image
-              src="/images/icons/facebook.png"
-              height={20}
-              width={12}
-              className=""
-              alt="logo" />
-            <Image
-              src="/images/icons/instagram.png"
-              height={20}
-              width={20}
-              className=""
-              alt="logo" />
-            <Image
-              src="/images/icons/twitter.png"
-              height={20}
-              width={20}
-              className=""
-              alt="logo" />
+            <a href="https://t.me/sherexcoin" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/images/icons/facebook.png"
+                height={20}
+                width={12}
+                alt="logo"
+              />
+            </a>
+            <a href="https://www.instagram.com/sherexcoin?igsh=bjlmY2ZvbG9wZDB2" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/images/icons/instagram.png"
+                height={20}
+                width={20}
+                className=""
+                alt="logo" />
+            </a>
+            <a href="https://x.com/sherexcoin?s=21" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/images/icons/twitter.png"
+                height={20}
+                width={20}
+                className=""
+                alt="logo" />
+            </a>
           </div>
         </div>
       </div>

@@ -25,9 +25,9 @@ const Section3 = () => {
             {t("springboard")}
           </p>
         </div>
-        <div className="flex items-center cursor-pointer bg-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[25.5px] mt-12">
+        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[25.5px] mt-12">
           <p className={`text-base lg:text-[28px] leading-8 text-[#291A15] font-bold uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("launch_your_token")}</p>
-        </div>
+        </a>
       </div>
       <div className="circle4"></div>
       <div className="circle5"></div>

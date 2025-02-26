@@ -102,9 +102,9 @@ const Section2 = () => {
             />
           </div>
         </div>
-        <div className="flex items-center cursor-pointer bg-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[25.5px] z-20">
+        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[25.5px] z-20">
           <p className={`text-base lg:text-[28px] leading-8 text-[#291A15] font-bold uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("start_earning")}</p>
-        </div>
+        </a>
       </div>
     </div>
   );
