@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Section6 = () => {
-  const {locale} = useRouter();
+  const { locale } = useRouter();
   const t = useTranslations();
   return (
     <div data-aos="fade-down"
@@ -29,7 +29,7 @@ const Section6 = () => {
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-auto">
           <p className={`text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("quick_link")}</p>
-          <div className="flex lg:flex-col justify-between  gap-2">
+          <div className="flex flex-wrap lg:flex-col justify-between gap-5">
             <div className="flex items-center gap-2">
               <Image
                 src="/images/icons/filledarrow.svg"
@@ -77,19 +77,23 @@ const Section6 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 w-full lg:w-auto justify-center items-center lg:items-start">
+        <div className="flex flex-col gap-2 w-full lg:w-auto justify-center items-center lg:items-start">
           <p className={`text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("help_support")}</p>
-          <div className="flex flex-col gap-2 items-center w-full">
+          <div className="flex flex-col gap-1 items-center lg:items-start w-full">
             <div className="flex items-center gap-2">
               <p className="text-white text-base font-normal">{t("support")}</p>
-              <p className="text-white text-base font-normal">info@sherex.com</p>
+              <a href="mailto:info@sherex.com" className="text-white text-base font-normal cursor-pointer">
+                info@sherex.com
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <p className="text-white text-base font-normal">{t("phone")}</p>
-              <p className="text-white text-base font-normal">+1 234 567 8900</p>
+              <a href="tel:+12345678900" className="text-white text-base font-normal cursor-pointer">
+                +1 234 567 8900
+              </a>
             </div>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 pt-5">
             <Image
               src="/images/icons/git.png"
               height={20}

@@ -174,7 +174,7 @@ const Section1 = () => {
         <div className="lg:hidden w-full relative " >
           <Slider ref={sliderRef} arrows={false} {...settings}>
             <div className='flex flex-col relative group pt-[130px]'>
-              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
+              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[246px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
                 <Image
                   src="images/icons/bitcoin.svg"
                   height={255}
@@ -192,7 +192,7 @@ const Section1 = () => {
               </div>
             </div>
             <div className='flex flex-col gap-3.5 relative group pt-[130px]'>
-              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
+              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[246px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
                 <Image
                   src="images/icons/trading.svg"
                   height={255}
@@ -210,7 +210,7 @@ const Section1 = () => {
               </div>
             </div>
             <div className="relative flex flex-col gap-3.5 cursor-pointer group pt-[130px] ">
-              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white mb-10">
+              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[246px] backdrop-blur-[29px] transition-colors duration-300 text-white mb-10">
                 <Image
                   src="images/icons/order.svg"
                   height={255}
@@ -231,7 +231,7 @@ const Section1 = () => {
         </div>
         <div className="hidden lg:grid lg:grid-cols-3 gap-[150px] lg:gap-[57px] min-h-[566px] items-end ">
           <div className='flex flex-col gap-3.5 relative group'>
-            <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
+            <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
               <Image
                 src="images/icons/bitcoin.svg"
                 height={255}
