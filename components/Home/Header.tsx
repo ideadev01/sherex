@@ -90,9 +90,8 @@ const Header = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Navbar */}
       <div
-        className="fixed top-0 overflow-hidden flex h-[100px] w-full px-5 xl:px-[150px] bg-gradient-to-b from-black via-black/70 to-black/0 z-20"
+        className="fixed top-0 flex h-[100px] w-full px-5 xl:px-[150px] bg-gradient-to-b from-black via-black/70 to-black/0 z-20"
         id="Navbar"
       >
         <div className="flex justify-between items-center w-full relative py-5">
@@ -108,8 +107,6 @@ const Header = () => {
               />
             </div>
           </div>
-
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between gap-10">
             <p onClick={() => scrollToSection('trading')} className="text-white cursor-pointer hover:text-[#FF5A03] font-semibold">{t("smart_trading")}</p>
             <p onClick={() => scrollToSection('earn')} className="text-white cursor-pointer hover:text-[#FF5A03] font-semibold">{t("earn")}</p>
@@ -118,7 +115,6 @@ const Header = () => {
             <p onClick={() => scrollToSection('faqs')} className="text-white cursor-pointer hover:text-[#FF5A03] font-semibold">{t("faqs")}</p>
           </div>
 
-          {/* Right-side Buttons (Desktop) */}
           <div className="flex items-center justify-end sm:gap-6">
             {/* <div className="lg:flex justify-between items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4">
               <Image src="/images/icons/app.svg" height={30} width={30} alt="app" />
@@ -129,14 +125,14 @@ const Header = () => {
               onClick={toggleDropdown}
             >
               <Image src="/images/icons/language.svg" height={20} width={20} alt="language" />
-              <p className="text-base text-white font-semibold">{selectedLanguage}</p>
+              <p className="text-xs lg:text-base text-white font-semibold">{selectedLanguage}</p>
               <Image src="/images/icons/dropdown.svg" height={5} width={10} alt="dropdown" />
               {isOpenLang && (
-                <div className="absolute left-0 mt-2 w-32 bg-black text-white border border-gray-700 rounded-md shadow-lg z-50">
+                <div className="absolute left-0 top-[40px] w-32 bg-black text-white border border-gray-700 rounded-md shadow-lg z-50">
                   {languages.map((lang) => (
                     <p
                       key={lang.code}
-                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer font-semibold"
+                      className="px-4 py-2 hover:bg-gray-700 cursor-pointer font-semibold text-xs lg:text-base"
                       onClick={() => selectLanguage(lang.code)}
                     >
                       {lang.name}
@@ -168,64 +164,22 @@ const Header = () => {
           <p onClick={() => scrollToSection('launch')} className="text-white cursor-pointer hover:text-[#FF5A03] font-semibold text-xl">{t("launch_memcoin")}</p>
           <p onClick={() => scrollToSection('join')} className="text-white cursor-pointer hover:text-[#FF5A03] font-semibold text-xl">{t("community")}</p>
           <p onClick={() => scrollToSection('faqs')} className="text-white cursor-pointer hover:text-[#FF5A03] font-semibold text-xl">{t("faqs")}</p>
-
-          {/* App Button (Mobile) */}
-          {/* <div className="flex items-center bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4 cursor-pointer">
-            <Image src="/images/icons/app.svg" height={30} width={30} alt="app" />
-            <p className="text-base text-white pr-4 font-semibold">{t("app")}</p>
-          </div> */}
-
-          {/* Language Selector */}
-          {/* <div className="relative">
-            <div
-              className="flex items-center gap-3 cursor-pointer"
-              onClick={() => setShowLanguages(!showLanguages)}
-            >
-              <Image src="/images/icons/language.svg" height={20} width={20} alt="language" />
-              <p className="text-base text-white pr-2 font-semibold">{selectedLanguage}</p>
-              <Image
-                src="/images/icons/dropdown.svg"
-                height={5}
-                width={10}
-                alt="dropdown"
-                className={`transition-transform ${showLanguages ? "rotate-180" : ""}`}
-              />
-            </div>
-
-            {showLanguages && (
-              <div className="absolute left-4  mt-2 w-32 text-white">
-                {languages.map((lang) => (
-                  <p
-                    key={lang.code}
-                    className="px-4 py-2 hover:bg-gray-700 cursor-pointer  rounded-md font-semibold"
-                    onClick={() => {
-                      selectLanguage(lang.code);
-                      setShowLanguages(false); // Hide the list after selecting
-                    }}
-                  >
-                    {lang.name}
-                  </p>
-                ))}
-              </div>
-            )}
-          </div> */}
         </div>
       </div>
 
-      {/* Main Content */}
       <div data-aos="fade-down">
         <div className="flex flex-col w-full h-screen justify-end gap-52 xl:gap-12 pb-14 lg:pb-[104px] px-5">
           <div className="flex flex-col w-full items-center">
-            <div className={`text-white text-center text-5xl lg:text-[100px] w-full lg:w-[80%] 2xl:w-[60%] uppercase    ${locale === 'ar' ? "leading-[50px] lg:leading-[140px]" : "font-Evil leading-[50px] lg:leading-[82px]"}`}>
+            <div className={`text-white text-center text-[27px] lg:text-[100px] w-full lg:w-[80%] 2xl:w-[60%] uppercase    ${locale === 'ar' ? "leading-[50px] lg:leading-[140px]" : "font-Evil leading-[50px] lg:leading-[82px]"}`}>
               {t("trade_memecoin")}
             </div>
           </div>
           <div className={`flex flex-col w-full justify-center items-center gap-[38px] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             <div className="w-full flex justify-center flex-col items-center">
-              <div className="text-white text-center text-[18px] lg:text-[23px] w-full lg:w-1/2 xl:w-[35%] uppercase font-bold leading-[28px]">
+              <div className="text-white text-center text-xs lg:text-[23px] w-full lg:w-1/2 xl:w-[35%] uppercase font-bold leading-[28px]">
                 {t("first_ever")}
               </div>
-              <div className="text-white text-center text-[18px] lg:text-[23px] w-full lg:w-1/2 xl:w-[35%] uppercase font-bold leading-[28px]">
+              <div className="text-white text-center text-xs lg:text-[23px] w-full lg:w-1/2 xl:w-[35%] uppercase font-bold leading-[28px]">
                 {t("simplicity")}
               </div>
             </div>

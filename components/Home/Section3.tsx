@@ -18,10 +18,10 @@ const Section3 = () => {
       />
       <div className="flex flex-col w-full h-full justify-end items-center py-20 px-5 z-20">
         <div className="flex flex-col justify-center items-center gap-10 lg:gap-3">
-          <h1 className={`text-white text-4xl lg:text-[57px] text-center font-bold leading-9 lg:leading-[68.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
+          <h1 className={`text-white text-[27px] lg:text-[57px] text-center font-bold leading-9 lg:leading-[68.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             {t("launch_memecoin")}
           </h1>
-          <p className="text-[#FAC43D] text-lg lg:text-[33px]  text-center font-normal w-full lg:w-2/3 leading-5 lg:leading-[44.94px]">
+          <p className="text-[#FAC43D] text-base lg:text-[33px]  text-center font-normal w-full lg:w-2/3 leading-5 lg:leading-[44.94px]">
             {t("springboard")}
           </p>
         </div>

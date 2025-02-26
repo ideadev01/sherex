@@ -59,8 +59,8 @@ const Section5 = () => {
       }}
     >
       <div className="flex flex-col h-auto items-start gap-[44px] w-full my-[85px] px-5 lg:px-[150px]">
-        <div className="flex flex-col w-full items-start z-20 pb-10 lg:pb-[100px]">
-          <h1 className={`text-[#FB9B00] text-3xl lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>
+        <div className="flex flex-col w-full items-start z-20 lg:pb-[100px]">
+          <h1 className={`text-[#FB9B00] text-[27px] lg:text-[37px] font-bold leading-[44.4px] tracking-[0%] uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             {t("frequently_ask")}
           </h1>
         </div>
@@ -78,7 +78,7 @@ const Section5 = () => {
                     className={`rounded-full h-6 w-6 
             ${activeTab === index ? "bg-[#FF5A03]" : "bg-[#FB9B00]"}`}
                   ></div>
-                  <p className="text-black text-lg font-normal"> {t(`tabs.${tab.key}`)}</p>
+                  <p className="text-black text-sm lg:text-lg font-normal"> {t(`tabs.${tab.key}`)}</p>
                 </div>
                 <Image
                   src="/images/icons/leftarrow.svg"
@@ -95,7 +95,7 @@ const Section5 = () => {
                 className={`w-full overflow-hidden transition-all duration-500 flex lg:hidden 
         ${activeTab === index ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"}`}
               >
-                <p className={`text-black text-lg font-normal mt-4 ml-10 ${locale === "ar" ? "mr-10" : "ml-10"}`}> {t(`content.${tab.key}`)}</p>
+                <p className={`text-black text-xs lg:text-lg font-normal mt-4 ml-10 ${locale === "ar" ? "mr-10" : "ml-10"}`}> {t(`content.${tab.key}`)}</p>
               </div>
             </div>
           ))}

@@ -23,7 +23,7 @@ const Section2 = () => {
       <div className="flex flex-col h-auto justify-between items-center gap-[44px] w-full my-[85px] z-20 px-5">
         <div className="flex flex-col w-full items-center z-20">
           <div className="flex flex-col justify-center items-center gap-6">
-            <h1 className={`text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
+            <h1 className={`text-white text-[27px] lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
               {t("earn_rewards")}
             </h1>
             <p className="text-[#FAC43D] text-lg text-center font-normal ">

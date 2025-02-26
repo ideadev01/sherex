@@ -89,10 +89,10 @@ const Section1 = () => {
     >
       <div className="flex flex-col justify-center items-center gap-14 py-[85px] lg:px-[150px] z-30">
         <div className="flex flex-col justify-center items-center gap-6 px-5">
-          <h1 className={`text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
+          <h1 className={`text-white text-[27px] lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             {t("why_trade")}
           </h1>
-          <p className="text-white text-lg text-center font-normal w-full lg:w-1/2">
+          <p className="text-white text-base lg:text-lg text-center font-normal w-full lg:w-1/2">
             {t("answer_trade")}
           </p>
         </div>
@@ -164,10 +164,10 @@ const Section1 = () => {
       </div>
       <div className="w-full relative h-full flex flex-col justify-center items-center gap-14 lg:gap-[44px]  md:px-24 lg:px-[150px] z-30">
         <div className="flex flex-col justify-center items-center gap-6 px-5">
-          <h1 className={`text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
+          <h1 className={`text-white text-[27px] lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             {t("Trade_ease")}
           </h1>
-          <p className="text-[#FAC43D] text-lg text-center font-normal ">
+          <p className="text-[#FAC43D] text-base lg:text-lg text-center font-normal ">
             {t("Trade_seamless")}
           </p>
         </div>
