@@ -20,9 +20,9 @@ const Section6 = () => {
           <div className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-lg py-2 px-[15px] gap-2">
             <Image
               src="/images/icons/liveChat.svg"
-              height={16}
-              width={12}
-              className=""
+              height={20}
+              width={20}
+              className="w-auto h-auto"
               alt="logo" />
             <p className="text-base lg:text-lg leading-8 text-white font-semibold uppercase">{t("live_chat")}</p>
           </div>
@@ -112,9 +112,9 @@ const Section6 = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-2 justify-between items-center w-full pt-10 pb-4 border-t border-[rgba(255,255,255,0.17)]">
+      <div className="flex justify-center items-center w-full pt-10 pb-4 border-t border-[rgba(255,255,255,0.17)]">
         <p className="text-white text-xs lg:text-base font-normal">{t("copyright")}</p>
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <p className="text-white text-xs lg:text-base font-normal">{t("payment")}</p>
           <Image
             src="/images/icons/card.png"
@@ -146,7 +146,7 @@ const Section6 = () => {
             width={20}
             className=""
             alt="logo" />
-        </div>
+        </div> */}
       </div>
     </div>
 
