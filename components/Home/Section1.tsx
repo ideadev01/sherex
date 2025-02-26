@@ -88,8 +88,8 @@ const Section1 = () => {
     <div data-aos="fade-down" id="trading"
       className="relative h-auto w-full flex flex-col bg-gradient"
     >
-      <div className="flex flex-col justify-center items-center gap-14 py-[85px] px-5 lg:px-[150px] z-30">
-        <div className="flex flex-col justify-center items-center gap-6">
+      <div className="flex flex-col justify-center items-center gap-14 py-[85px] lg:px-[150px] z-30">
+        <div className="flex flex-col justify-center items-center gap-6 px-5">
           <h1 className={`text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             {t("why_trade")}
           </h1>
@@ -163,8 +163,8 @@ const Section1 = () => {
           </div>
         </a>
       </div>
-      <div className="w-full relative h-full flex flex-col justify-center items-center gap-14 lg:gap-[44px]  px-5 md:px-24 lg:px-[150px] z-30">
-        <div className="flex flex-col justify-center items-center gap-6">
+      <div className="w-full relative h-full flex flex-col justify-center items-center gap-14 lg:gap-[44px]  md:px-24 lg:px-[150px] z-30">
+        <div className="flex flex-col justify-center items-center gap-6 px-5">
           <h1 className={`text-white text-4xl lg:text-[37px] text-center font-bold leading-[44.4px] tracking-[0%] ${locale === 'ar' ? "" : "font-Nulshock"}`}>
             {t("Trade_ease")}
           </h1>
@@ -175,7 +175,7 @@ const Section1 = () => {
         <div className="lg:hidden w-full relative " >
           <Slider ref={sliderRef} arrows={false} {...settings}>
             <div className='flex flex-col relative group pt-[130px]'>
-              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
+              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
                 <Image
                   src="images/icons/bitcoin.svg"
                   height={255}
@@ -184,16 +184,16 @@ const Section1 = () => {
                   alt="logo"
                 />
                 <div className="gap-[9px] flex flex-col justify-center items-center">
-                  <p className={`text-[#FB9B00] text-[28px] text-center font-bold leading-8 ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("swap_token")}</p>
-                  <p className="text-lg text-center font-normal leading-6">{t("swap_token_des")}</p>
+                  <p className={`text-[#FB9B00]  text-2xl lg:text-[28px] text-center font-bold leading-8 ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("swap_token")}</p>
+                  <p className="text-sm lg:text-lg text-center font-normal leading-6">{t("swap_token_des")}</p>
                 </div>
               </div>
               <div className="flex items-center cursor-pointer border-[#FB9B00] border border-solid rounded-2xl py-4 w-full group-hover:bg-[#FB9B00] pt-5">
-                <p className={`w-full text-[28px] leading-8 text-[#FB9B00] font-bold uppercase text-center group-hover:text-white ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("swap")}</p>
+                <p className={`w-full  text-2xl lg:text-[28px] leading-8 text-[#FB9B00] font-bold uppercase text-center group-hover:text-white ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("swap")}</p>
               </div>
             </div>
             <div className='flex flex-col gap-3.5 relative group pt-[130px]'>
-              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
+              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer mb-10">
                 <Image
                   src="images/icons/trading.svg"
                   height={255}
@@ -202,16 +202,16 @@ const Section1 = () => {
                   alt="logo"
                 />
                 <div className="gap-[9px] flex flex-col justify-center items-center">
-                  <p className={`text-[#FB9B00] text-[28px] text-center font-bold leading-8 ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("limit_order_trading")}</p>
-                  <p className="text-lg text-center font-normal leading-6">{t("limit_order_des")}</p>
+                  <p className={`text-[#FB9B00]  text-2xl lg:text-[28px] text-center font-bold leading-8 ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("limit_order_trading")}</p>
+                  <p className="text-sm lg:text-lg text-center font-normal leading-6">{t("limit_order_des")}</p>
                 </div>
               </div>
               <div className="flex items-center cursor-pointer border-[#FB9B00] border border-solid rounded-2xl py-4 w-full group-hover:bg-[#FB9B00]">
-                <p className={`w-full text-[28px] leading-8 text-[#FB9B00] font-bold uppercase text-center group-hover:text-white ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("limit_order")}</p>
+                <p className={`w-full  text-2xl lg:text-[28px] leading-8 text-[#FB9B00] font-bold uppercase text-center group-hover:text-white ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("limit_order")}</p>
               </div>
             </div>
             <div className="relative flex flex-col gap-3.5 cursor-pointer group pt-[130px] ">
-              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white mb-10">
+              <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white mb-10">
                 <Image
                   src="images/icons/order.svg"
                   height={255}
@@ -220,19 +220,19 @@ const Section1 = () => {
                   alt="logo"
                 />
                 <div className="gap-[9px] flex flex-col justify-center items-center">
-                  <p className={`text-[#FB9B00] text-[28px] text-center font-bold leading-8 group-hover:text-white ${locale === 'ar' ? "" : "font-Nulshock"}`} >{t("twap_large")}</p>
-                  <p className="text-lg text-center font-normal leading-6 group-hover:text-white">{t("twap_large_description")}</p>
+                  <p className={`text-[#FB9B00] text-2xl lg:text-[28px] text-center font-bold leading-8  ${locale === 'ar' ? "" : "font-Nulshock"}`} >{t("twap_large")}</p>
+                  <p className="text-sm lg:text-lg text-center font-normal leading-6 group-hover:text-white">{t("twap_large_description")}</p>
                 </div>
               </div>
               <div className="flex items-center cursor-pointer border-[#FB9B00] border border-solid rounded-2xl py-4 w-full group-hover:bg-[#FB9B00]">
-                <p className={`w-full text-[28px] leading-8 text-[#FB9B00] font-bold uppercase text-center group-hover:text-white ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("twap")}</p>
+                <p className={`w-full  text-2xl lg:text-[28px] leading-8 text-[#FB9B00] font-bold uppercase text-center group-hover:text-white ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("twap")}</p>
               </div>
             </div>
           </Slider>
         </div>
         <div className="hidden lg:grid lg:grid-cols-3 gap-[150px] lg:gap-[57px] min-h-[566px] items-end ">
           <div className='flex flex-col gap-3.5 relative group'>
-            <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] min-h-[286px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
+            <div className="flex flex-col gap-[18px] justify-end py-2 items-center rounded-2xl bg-[rgba(255,255,255,0.1)] px-[14.5px] h-[264px] backdrop-blur-[29px] transition-colors duration-300 text-white cursor-pointer">
               <Image
                 src="images/icons/bitcoin.svg"
                 height={255}

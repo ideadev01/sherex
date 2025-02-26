@@ -35,7 +35,7 @@ const Section6 = () => {
                 src="/images/icons/filledarrow.svg"
                 height={8}
                 width={8}
-                className=""
+                className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-base font-normal">{t("earn")}</p>
             </div>
@@ -44,7 +44,7 @@ const Section6 = () => {
                 src="/images/icons/filledarrow.svg"
                 height={8}
                 width={8}
-                className=""
+                className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-base font-normal">{t("trade")}</p>
             </div>
@@ -53,7 +53,7 @@ const Section6 = () => {
                 src="/images/icons/filledarrow.svg"
                 height={8}
                 width={8}
-                className=""
+                className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-base font-normal">{t("community")}</p>
             </div>
@@ -62,7 +62,7 @@ const Section6 = () => {
                 src="/images/icons/filledarrow.svg"
                 height={8}
                 width={8}
-                className=""
+                className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-base font-normal">{t("github")}</p>
             </div>
@@ -71,7 +71,7 @@ const Section6 = () => {
                 src="/images/icons/filledarrow.svg"
                 height={8}
                 width={8}
-                className=""
+                className="hidden lg:block"
                 alt="logo" />
               <p className="text-white text-base font-normal">{t("term_service")}</p>
             </div>
@@ -79,7 +79,7 @@ const Section6 = () => {
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-auto justify-center items-center lg:items-start">
           <p className={`text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("help_support")}</p>
-          <div className="flex flex-row lg:flex-col gap-2 justify-between w-full">
+          <div className="flex flex-col gap-2 items-center w-full">
             <div className="flex items-center gap-2">
               <p className="text-white text-base font-normal">{t("support")}</p>
               <p className="text-white text-base font-normal">info@sherex.com</p>

@@ -119,11 +119,11 @@ const Header = () => {
           </div>
 
           {/* Right-side Buttons (Desktop) */}
-          <div className="flex items-center justify-end gap-2 sm:gap-6">
-            <div className="flex justify-between items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4">
+          <div className="flex items-center justify-end sm:gap-6">
+            {/* <div className="lg:flex justify-between items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4">
               <Image src="/images/icons/app.svg" height={30} width={30} alt="app" />
               <p className="text-base text-white pr-4 font-semibold">{t("app")}</p>
-            </div>
+            </div> */}
             <div
               className=" relative flex items-center gap-1 cursor-pointer px-2 py-1 rounded-md hover:bg-gray-800"
               onClick={toggleDropdown}
@@ -145,12 +145,12 @@ const Header = () => {
                 </div>
               )}
             </div>
-
+            <button className="lg:hidden flex items-center" onClick={toggleSidebar}>
+              <Image src="/images/icons/menu.svg" height={50} width={50} alt="menu" />
+            </button>
           </div>
 
-          <button className="lg:hidden flex items-center" onClick={toggleSidebar}>
-            <Image src="/images/icons/menu.svg" height={50} width={50} alt="menu" />
-          </button>
+
         </div>
       </div>
 
@@ -216,7 +216,7 @@ const Header = () => {
       <div data-aos="fade-down">
         <div className="flex flex-col w-full h-screen justify-end gap-52 xl:gap-12 pb-14 lg:pb-[104px] px-5">
           <div className="flex flex-col w-full items-center">
-            <div className={`text-white text-center text-5xl lg:text-[100px] w-full lg:w-[80%] 2xl:w-[60%] uppercase leading-[50px] lg:leading-[82px]   ${locale === 'ar' ? "" : "font-Evil"}`}>
+            <div className={`text-white text-center text-5xl lg:text-[100px] w-full lg:w-[80%] 2xl:w-[60%] uppercase    ${locale === 'ar' ? "leading-[50px] lg:leading-[140px]" : "font-Evil leading-[50px] lg:leading-[82px]"}`}>
               {t("trade_memecoin")}
             </div>
           </div>
