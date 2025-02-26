@@ -59,7 +59,6 @@ const Section1 = () => {
 
   const sliderRef = useRef<Slider | null>(null)  // Correct type for sliderRef
   const settings = {
-    className: "right",
     centerMode: true,
     focusOnSelect: true,
     infinite: true,
