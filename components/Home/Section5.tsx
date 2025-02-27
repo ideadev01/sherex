@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
 const Section5 = () => {
-  const t = useTranslations();
+  const { t } = useTranslation("common");
   const { locale } = useRouter();
   const [activeTab, setActiveTab] = useState<number | null>(null);
   const [fadeState, setFadeState] = useState<"fading-in" | "fading-out" | null>(null);

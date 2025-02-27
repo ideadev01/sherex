@@ -2,11 +2,11 @@
 import React from "react";
 import { useState } from 'react';
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 const Section2 = () => {
-  const t = useTranslations();
-   const { locale } = useRouter();
+  const { t } = useTranslation("common");
+  const { locale } = useRouter();
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);

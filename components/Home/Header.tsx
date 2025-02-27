@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
 const Header = () => {
   const router = useRouter();
   const { locale } = useRouter();
-  const t = useTranslations();
+  const { t } = useTranslation("common");
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState((locale || 'en').toUpperCase());

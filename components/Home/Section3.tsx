@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Section3 = () => {
-  const t = useTranslations();
+   const { t } = useTranslation("common");
   const { locale } = useRouter();
   return (
     <div data-aos="fade-down" id="launch"

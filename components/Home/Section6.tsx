@@ -1,10 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Section6 = () => {
   const { locale } = useRouter();
-  const t = useTranslations();
+  const { t } = useTranslation("common");
   return (
     <div data-aos="fade-down"
       className="relative h-auto w-full flex flex-col bg-gradient-to-r from-[#291A15]  via-[#946842] to-[#291A15] px-5 lg:px-[150px] pt-[115px] "

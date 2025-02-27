@@ -1,7 +1,7 @@
 "use client"
 import { useRef, useState } from 'react';
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "next-i18next";
 import { useRouter } from 'next/router';
 import Slider from "react-slick"
 import "slick-carousel/slick/slick-theme.css";
@@ -45,7 +45,7 @@ const slides = [
   },
 ];
 const Section1 = () => {
-  const t = useTranslations();
+    const { t } = useTranslation("common");
   const { locale } = useRouter();
   const [hoverStates, setHoverStates] = useState<{ [key: number]: boolean }>({});
 
