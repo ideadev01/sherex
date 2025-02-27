@@ -17,15 +17,6 @@ const Section6 = () => {
             width={148}
             className=""
             alt="logo" />
-          <div className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-lg py-2 px-[15px] gap-2">
-            <Image
-              src="/images/icons/liveChat.svg"
-              height={20}
-              width={20}
-              className="w-auto h-auto"
-              alt="logo" />
-            <p className="text-base lg:text-lg leading-8 text-white font-semibold uppercase">{t("live_chat")}</p>
-          </div>
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-auto">
           <p className={`text-sm lg:text-lg leading-8 text-[#FF5A03] font-bold uppercase text-center lg:text-left ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("quick_link")}</p>
@@ -37,7 +28,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-xs lg:text-base font-normal">{t("earn")}</p>
+              <p className="text-white text-xs lg:text-base font-normal hover:text-[#FF5A03] transition duration-300">{t("earn")}</p>
             </a>
             <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Image
@@ -46,7 +37,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-xs lg:text-base font-normal">{t("trade")}</p>
+              <p className="text-white text-xs lg:text-base font-normal hover:text-[#FF5A03] transition duration-300 ">{t("trade")}</p>
             </a>
             <div className="flex items-center gap-2">
               <Image
@@ -55,7 +46,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-xs lg:text-base font-normal">{t("community")}</p>
+              <p className="text-white text-xs lg:text-base font-normal hover:text-[#FF5A03] transition duration-300 cursor-pointer">{t("community")}</p>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -64,7 +55,7 @@ const Section6 = () => {
                 width={8}
                 className="hidden lg:block"
                 alt="logo" />
-              <p className="text-white text-xs lg:text-base font-normal">{t("term_service")}</p>
+              <p className="text-white text-xs lg:text-base font-normal hover:text-[#FF5A03] transition duration-300 cursor-pointer">{t("term_service")}</p>
             </div>
           </div>
         </div>
@@ -73,27 +64,21 @@ const Section6 = () => {
           <div className="flex flex-col gap-1 items-center lg:items-start w-full">
             <div className="flex items-center gap-2">
               <p className="text-white text-xs lg:text-base font-normal">{t("support")}</p>
-              <a href="mailto:info@sherex.com" className="text-white text-base font-normal cursor-pointer">
-                info@sherex.com
-              </a>
-            </div>
-            <div className="flex items-center gap-2">
-              <p className="text-white text-xs lg:text-base font-normal">{t("phone")}</p>
-              <a href="tel:+12345678900" className="text-white text-base font-normal cursor-pointer">
-                +1 234 567 8900
+              <a href="mailto:info@sherex.com" className="text-white text-base font-normal cursor-pointer hover:text-[#FF5A03] transition duration-300">
+                info@sherex.io
               </a>
             </div>
           </div>
           <div className="flex items-center gap-5 pt-5">
-            <a href="https://t.me/sherexcoin" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/sherexcoin" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:scale-125">
               <Image
-                src="/images/icons/facebook.png"
+                src="/images/icons/telegram.svg"
                 height={20}
-                width={12}
+                width={20}
                 alt="logo"
               />
             </a>
-            <a href="https://www.instagram.com/sherexcoin?igsh=bjlmY2ZvbG9wZDB2" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/sherexcoin?igsh=bjlmY2ZvbG9wZDB2" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:scale-125">
               <Image
                 src="/images/icons/instagram.png"
                 height={20}
@@ -101,7 +86,7 @@ const Section6 = () => {
                 className=""
                 alt="logo" />
             </a>
-            <a href="https://x.com/sherexcoin?s=21" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/sherexcoin?s=21" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:scale-125">
               <Image
                 src="/images/icons/twitter.png"
                 height={20}

@@ -184,10 +184,10 @@ const Header = () => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-[27px] z-30">
-              <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4">
+              <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4 transition duration-300 hover:scale-105 hover:brightness-110">
                 <p className="text-base text-white font-semibold">{t("start_trading")}</p>
               </a>
-              <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer rounded-md py-2 px-4 border-2 border-solid border-white">
+              <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer rounded-md py-2 px-4 border-2 border-solid border-white transition duration-300 hover:scale-105 hover:brightness-110">
                 <p className="text-base text-white font-semibold">{t("learn_more")}</p>
               </a>
             </div>

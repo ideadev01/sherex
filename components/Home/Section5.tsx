@@ -118,7 +118,7 @@ const Section5 = () => {
         </div>
       </div>
       <div className="absolute bottom-10 w-full z-30">
-        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="w-full flex justify-center items-center">
+        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:scale-105 hover:brightness-110 w-full flex justify-center items-center">
           <div className="flex items-center justify-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-md py-2 px-4 z-20">
             <p className="text-base text-white font-semibold">{t("learn_more")}</p>
           </div>

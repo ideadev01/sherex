@@ -57,7 +57,7 @@ const Section4 = () => {
             </p>
           </div>
         </div>
-        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-[#FF5A03] rounded-full py-5 lg:py-2 px-5 z-20 w-full lg:w-auto justify-center">
+        <a href="https://t.me/sherexcoin" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:scale-105 hover:brightness-110 flex items-center cursor-pointer bg-[#FF5A03] rounded-full py-5 lg:py-2 px-5 z-20 w-full lg:w-auto justify-center">
           <p className="text-base leading-8 text-white font-semibold uppercase">{t("join_community")}</p>
         </a>
       </div>

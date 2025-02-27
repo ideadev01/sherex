@@ -156,7 +156,7 @@ const Section1 = () => {
         </div>
         <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer">
           <div
-            className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D]  rounded-md py-2 px-4"
+            className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D]  rounded-md py-2 px-4 transition duration-300 hover:scale-105 hover:brightness-110"
           >
             <p className="text-base text-white font-semibold">{t("start_trading_now")}</p>
           </div>
@@ -286,7 +286,7 @@ const Section1 = () => {
           </div>
         </div>
 
-        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[57.5px] mb-10 z-30">
+        <a href="https://app.sherex.io" target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer bg-gradient-to-l to-[#FF5A03] from-[#FAC43D] rounded-full py-2 lg:py-[19px] px-[57.5px] mb-10 z-30 transition duration-300 hover:scale-105 hover:brightness-110">
           <p className={`ext-base lg:text-[28px] leading-8 text-white font-semibold uppercase ${locale === 'ar' ? "" : "font-Nulshock"}`}>{t("trade_now")}</p>
         </a>
       </div>
